@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "humus.py"
+version = "0.1.0"
+description = "A client for the humus composting database"
+authors = ["Tim Cowlishaw <tim@timcowlishaw.co.uk>"]
+license = "AGPL-3.0"
+readme = "README.md"
+keywords = ["database", "client", "permacomputing", "compost", "decay", "experimental"]
+homepage = "https://github.com/timcowlishaw/humus.py"
+repository = "https://github.com/timcowlishaw/humus.py"
+classifiers = ["Development Status :: 3 - Alpha", "Topic :: Database :: Front-Ends", "Topic :: Games/Entertainment", "Intended Audience :: Developers"]
+packages = [
+    { include = "./humus" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.32.3"
+
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.28.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

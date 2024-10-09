@@ -1,0 +1,5 @@
+shell.nix
+.envrc
+venv
+__pycache__
+dist/
